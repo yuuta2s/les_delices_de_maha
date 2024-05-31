@@ -1,5 +1,5 @@
 import { FaCartShopping } from "react-icons/fa";
-import Logo from "src/assets/bea.png";
+import Logo from "../../assets/images/bea.png";
 
 const Menu = [
     {
