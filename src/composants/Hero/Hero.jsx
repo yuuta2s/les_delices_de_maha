@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CouscousBoeuf1 from "../../assets/images/couscous-boeuf.jpg";
 import TagineOlivesImg2 from "../../assets/images/tagine-aux-pommes-de-terre-olives-et-citrons-confits.jpg";
 import TchakchoukaImg3 from "../../assets/images/tchakchouka-a-l-oeuf.jpg";
-import Vector from "../../assets/images/vector_hero_section.png";
+import Vector from "../../assets/images/epices_street.jpg";
 
 const ImageList = [
   {
@@ -45,14 +45,14 @@ const Hero = () => {
             data-aos-once="true"
             className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1"
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-              Découvrez{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white bg-primary rounded-lg">
+              Découvrez {" "}
+              <span className="bg-clip-text text-white">
                 Les Délices de
               </span>{" "}
               Maha
             </h1>
-            <p className="text-sm">
+            <p className="text-l rounded-lg bg-secondary">
               Plongez dans l'authenticité du Maroc avec nos plats savoureux et nos desserts exquis. Commandez maintenant et laissez vos papilles voyager!
             </p>
             <div>
@@ -62,15 +62,15 @@ const Hero = () => {
             </div>
           </div>
           {/* Image section */}
-          <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2">
-            <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
+          <div className="min-h-[550px] sm:min-h-[550px] flex justify-center items-center relative order-1 sm:order-2">
+            <div className="h-[400px] sm:h-[450px] overflow-hidden flex justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-duration="300"
                 data-aos-once="true"
                 src={imageId}
                 alt="Plat"
-                className="w-[300px] sm:w-[450px] sm:scale-125  mx-auto spin"
+                className="w-[250px] sm:w-[250px] sm:scale-125  mx-auto spin"
               />
             </div>
             <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
