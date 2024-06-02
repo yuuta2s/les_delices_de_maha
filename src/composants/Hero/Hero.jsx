@@ -16,7 +16,8 @@ const ImageList = [
   {
     id: 3,
     img: TchakchoukaImg3,
-  },
+  }, 
+ 
 ];
 
 const Hero = () => {
@@ -33,7 +34,7 @@ const Hero = () => {
 
   return (
     <div
-      className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
+      className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-dark duration-200"
       style={bgImage}
     >
       <div className="container pb-8 sm:pb-0">
