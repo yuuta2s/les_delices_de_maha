@@ -1,23 +1,34 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Hero from "./composants/Hero/Hero";
 import Services from './composants/Services/Services';
 import Cosmetic from './composants/Cosmetic/Cosmetic';
 import Offres from './composants/Offres/Offres';
+import Navbar from './composants/NavBar/Navbar';
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200"></div>
-<Hero/>
-<Services/>
-<Cosmetic/>
-<Offres/>
-    </>
-  )
-}
+    <Router>
+      <Navbar />
+      <main>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="nos-services">
+          <Services />
+        </section>
+        <section id="cosmetics">
+          <Cosmetic />
+        </section>
+        <section id="nos-offres">
+          <Offres />
+        </section>
+        {/* <section id="contact">
+          <Contact />
+        </section> */}
+      </main>
+    </Router>
+  );
+};
 
 export default App;
